@@ -1,0 +1,255 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+header .nav-links li {
+    margin-left: 20px;
+}
+
+header .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero About Section */
+.hero-about {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Adjust the height as needed */
+    background-image: url('hero.jpg'); /* Add the path to your image */
+    background-size: cover; /* Ensure the image covers the entire section */
+    background-position: center; /* Center the image */
+    color: #fff; /* White text to stand out on the image */
+    text-align: center; /* Center the content */
+    padding: 50px 20px; /* Add padding to the content */
+}
+
+/* Center content in the hero section */
+.hero-about .hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center content vertically and horizontally */
+    max-width: 80%; /* Optional: Limit the width of the text */
+}
+
+/* Hero section title */
+.hero-about h2 {
+    color: #007bff;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Hero section paragraph */
+.hero-about p {
+    font-size: 18px;
+    line-height: 1.5;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Optional: Add a dark overlay to the image for better text visibility */
+.hero-about::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adjust the opacity for the overlay */
+    z-index: -1; /* Place the overlay behind the text */
+}
+
+/* About Info Section */
+.about-info {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.about-info h2 {
+    font-size: 36px;
+    color: #007bff;
+}
+
+.about-info p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* About Values Section */
+.about-values {
+    background-color: #f0f0f0;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.about-values h2 {
+    font-size: 36px;
+    color: #007bff;
+    margin-bottom: 30px;
+}
+
+.values-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.value-item {
+    background-color: white;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    text-align: center;
+}
+.value-item:hover{
+    box-shadow: 10px 5px 5px 5px #007bff;
+    transition: 2s;
+  
+}
+.value-item:hover{
+    font-weight: 1000;
+}
+
+.value-item h3 {
+    color: #007bff;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.value-item p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Company Timeline Section */
+.about-timeline {
+    padding: 40px 20px;
+    background-color: #fff;
+}
+
+.about-timeline h2 {
+    font-size: 36px;
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.timeline {
+    list-style: none;
+    padding: 0;
+}
+
+.timeline li {
+    background-color: #f9f9f9;
+    margin: 20px 0;
+    padding: 15px;
+    border-left: 5px solid #007bff;
+}
+
+.timeline li h3 {
+    font-size: 24px;
+    color: #007bff;
+}
+
+.timeline li p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 40px 20px;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 36px;
+    color: #007bff;
+    margin-bottom: 30px;
+}
+
+.testimonial-card {
+    background-color: white;
+    padding: 20px;
+    width: 45%;
+    margin: 10px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-card p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.testimonial-card strong {
+    font-weight: bold;
+}
+.testimonial-card:hover{
+    box-shadow: 10px 5px 5px 5px #007bff;
+    transition: 2s;
+}
+.testimonial-card:hover{
+    font-weight: 1000;
+}
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .values-grid {
+        flex-direction: column;
+    }
+
+    .value-item {
+        width: 100%;
+    }
+
+    .testimonial-card {
+        width: 80%;
+    }
+}

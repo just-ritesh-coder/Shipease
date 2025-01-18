@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShipEase - Cargo Services</title>
+    <link rel="stylesheet" href="cargo.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="cargo-container">
+            <h1 class="logo">ShipEase</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="compare.html">Compare Couriers</a></li>
+                    <li><a href="cargo.html">Cargo Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Cargo Services Section -->
+    <section class="cargo-services">
+        <div class="container">
+            <h2>Cargo Services</h2>
+            <p>Ship your bulk goods with ease! Compare cargo services across air, sea, and road transport.</p>
+            <form id="cargo-form">
+                <div class="form-group">
+                    <label for="origin">Starting Location:</label>
+                    <input type="text" id="origin" placeholder="Enter your starting location">
+                </div>
+                <div class="form-group">
+                    <label for="destination">Destination:</label>
+                    <input type="text" id="destination" placeholder="Enter your destination">
+                </div>
+                <div class="form-group">
+                    <label for="cargo-weight">Cargo Weight (kg):</label>
+                    <input type="number" id="cargo-weight" placeholder="Enter cargo weight">
+                </div>
+                <div class="form-group">
+                    <label for="cargo-type">Type of Goods:</label>
+                    <select id="cargo-type">
+                        <option value="general">General</option>
+                        <option value="fragile">Fragile</option>
+                        <option value="perishable">Perishable</option>
+                        <option value="hazardous">Hazardous</option>
+                    </select>
+                </div>
+                <button type="button" id="compare-cargo" class="btn btn-compare">Compare Cargo Services</button>
+            </form>
+        </div>
+
+        <!-- Results Slide Panel -->
+        <div id="cargo-results-panel" class="results-panel">
+            <div class="results-header">
+                <h3>Cargo Service Results</h3>
+                <button id="close-results" class="close-btn">×</button>
+            </div>
+            <div class="results-content">
+                <!-- Dynamic results will be appended here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 ShipEase. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Link the JavaScript File -->
+    <script src="cargo.js"></script>
+</body>
+</html>
